@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linwei Tao — Projects</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    min-height: 100vh;
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #333;
+  }
+
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 5rem 2rem 6rem;
+  }
+
+  header { margin-bottom: 3.5rem; }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #c0392b;
+    margin-bottom: 0.9rem;
+  }
+
+  header h1 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 700;
+    color: #111;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  header p { font-size: 0.88rem; color: #999; }
+
+  .divider {
+    width: 2.5rem;
+    height: 2px;
+    background: #c0392b;
+    border-radius: 2px;
+    margin: 2.5rem 0 3rem;
+  }
+
+  .section-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #bbb;
+    margin-bottom: 1.2rem;
+  }
+
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.4rem 1.6rem;
+    border: 1.5px solid #eee;
+    border-radius: 10px;
+    background: #fafafa;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.16s ease;
+  }
+
+  .project-card:hover {
+    border-color: #c0392b;
+    background: #fff8f7;
+    transform: translateX(4px);
+    box-shadow: 0 4px 20px rgba(192,57,43,0.07);
+  }
+
+  .project-info h2 {
+    font-size: 0.97rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+  }
+
+  .project-info .desc {
+    font-size: 0.75rem;
+    color: #aaa;
+    line-height: 1.5;
+  }
+
+  .project-info .tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+
+  .tag {
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border-radius: 20px;
+    border: 1px solid #e5e5e5;
+    color: #bbb;
+  }
+
+  .project-arrow {
+    font-size: 1rem;
+    color: #ddd;
+    transition: color 0.16s, transform 0.16s;
+    flex-shrink: 0;
+  }
+
+  .project-card:hover .project-arrow {
+    color: #c0392b;
+    transform: translateX(3px);
+  }
+
+  footer {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 0; right: 0;
+    text-align: center;
+    font-size: 0.62rem;
+    color: #ddd;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <p class="eyebrow">Linwei Tao</p>
+    <h1>Projects</h1>
+    <p>Open-source tools and resources.</p>
+  </header>
+
+  <div class="divider"></div>
+
+  <p class="section-label">All Projects</p>
+
+  <div class="projects-list">
+
+    <a class="project-card" href="https://github.com/Linwei94/gnvitop" target="_blank" rel="noopener">
+      <div class="project-info">
+        <h2>gnvitop</h2>
+        <p class="desc">Global nvitop &mdash; a web-based GPU monitoring dashboard that monitors all your remote GPU servers from a single page.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">GPU Monitoring</span>
+          <span class="tag">Dashboard</span>
+        </div>
+      </div>
+      <span class="project-arrow">&#8594;</span>
+    </a>
+
+    <a class="project-card" href="https://github.com/Linwei94/skills" target="_blank" rel="noopener">
+      <div class="project-info">
+        <h2>skills</h2>
+        <p class="desc">A collection of Claude Code skills for AI research workflows and developer tooling &mdash; installable via <code style="font-size:0.72rem;background:#f5f5f5;padding:0.1rem 0.3rem;border-radius:3px;">claude skill install</code>.</p>
+        <div class="tags">
+          <span class="tag">Claude Code</span>
+          <span class="tag">AI Research</span>
+          <span class="tag">Tooling</span>
+        </div>
+      </div>
+      <span class="project-arrow">&#8594;</span>
+    </a>
+
+  </div>
+</div>
+
+<footer>github.com/Linwei94</footer>
+
+</body>
+</html>
